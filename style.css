@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css?family=Khula&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a:active,
+a:hover,
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+body {
+  background-image: url(images/background.jpg);
+  font-family: "Khula", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.meme-wrapper {
+  display: flex;
+  gap: 100px;
+  overflow: hidden;
+}
+
+.meme__text-content {
+  background-color: #fdcd2c;
+  opacity: 0.9;
+  padding: 40px;
+  box-shadow: rgba(34, 60, 80, 0.2) 14px 12px 8px 0px;
+  border-radius: 5px;
+  border: 5px solid #000;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.meme__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #d0d0d0c9;
+  font-size: 24px;
+}
+
+.meme__text-top p,
+.meme__text-bottom p {
+  margin-bottom: 20px;
+  font-size: 36px;
+  color: #000;
+}
+
+.meme__controls-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.meme__controls {
+  display: flex;
+  gap: 12px;
+}
+
+.meme__controls-option {
+  display: flex;
+  flex-direction: column;
+}
+
+.meme__controls-option label {
+  font-size: 16px;
+  color: #000;
+}
+
+.meme__controls-option input,
+.meme__controls-option select {
+  border: 5px solid #000;
+}
+
+.input {
+  width: 500px;
+  height: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  font-size: 24px;
+  background: #bb9000;
+  color: #000;
+  outline: none;
+  text-align: left;
+  border: 5px solid #000;
+  margin-top: 10px;
+}
+
+.meme__text-top input::placeholder,
+.meme__text-bottom input::placeholder {
+  color: #fff;
+}
+
+.meme__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  opacity: 0.9;
+}
+
+.meme__buttons a,
+#buttonSending {
+  -webkit-box-shadow: 14px 12px 8px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 14px 12px 8px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 14px 12px 8px 0px rgba(34, 60, 80, 0.2);
+  border-radius: 5px;
+  background: #fdcd2c;
+  border: 5px solid #000;
+  height: 50px;
+  width: 80%;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  padding: 7px;
+  transition: all 0.3s;
+  color: #000;
+}
+
+.meme__buttons a:hover,
+#buttonSending:hover {
+  background: #bb9000;
+  color: #fff;
+}
+
+.meme__image {
+  opacity: 0.9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 800px;
+  height: 600px;
+  background: #fdcd2c;
+  border: 5px solid #000;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+}
+.meme__generated-text {
+  position: absolute;
+  cursor: grab;
+}

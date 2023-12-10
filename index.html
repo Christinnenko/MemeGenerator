@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAgAAAAIACQAHAAAAGb/8AAsAAAAAJz4AHrz8ALu9vQAA6v8A+fn5AADx+QBT8/0AAu/8ALej/wC1pv8Atan/AF/x9wD9/v8AYu/6AAH//wAAo84AX/b9AAfG9wAVVW0AAAABAKme+gD09PQABwABAADp9AAGBAQAsaL9AADy/QAE8v0A/f39AP/9/QASDAEAC777ACMjMwAa7fcAe3N0AMjKygD4+PgAvLy8AAoEBQD6+PgACAgIAAxwiQAH8PgAXPL8AFz0+QBd+f8AqI3/AAm8/wATzdgABAADAD8/PwAAAQ8Arpz/AAIHBgBK9f0Azs7OALCm+QBb7PQAAPrzAAsKBgD8/PwAAPz5AEa+vQAEwPEAFQYDAP/9/wAAFxsAAv38APDu7gCVdfgAAAAEAAMGBAC4oesAAPH0AAsBBwD7+PoAKBkGABAQEABPUVIAenp6ALi3uQAEAgIAsKT+AFZaWwD7+/sA///+AAWtxAAAZYcA6vr5AAABAAAABAAAAAAGAAAKAAAKtcoACQEAABDN/wAGBgYAs6T/AAfs+QDq5OUA+P//AAcAIQA2oqMArKysABAGBgAA/PwArqysAA+koQALAyEA////ABvZ/wAO9/8AeXl5AAEBAQBUVFQAhoHGABp/nwDj4+MA9P36AAkFBAAsVlsA+vr6ACkmUwAAWW4APXxyABMIBAAM8P0AEez6AAHF+wAdAAcAODg4AGD3/gAL/P0A9fX1AHNjtgAA7PsAAwAaAAYkPQAHCwUADwECAB4cHAAQBAIA/P37APz+/gBX9/8AEQgFAP7+/gAQDg4AAMb/ABu13gBi9vwAZPT/AI5+9AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAc3NzmItzc1GVmH8bc3Nzc3Nzc5hCOHdXNwBCc3Nzc3NzcyJ/kIxLgEZFGGRzWnNzc3N/iDQ+EE6eUpp6Lipzc3NzWlMOWFgfZw8cBAYCc3NzmJRMjjoaeSZfTYYHfQoqc5hWa3IFQUhcdBUXNY8bc0Jzl1AvJWOZKXM9MGWbVUIiAIFdYoWKfwpzKwsJNnYiImYoXiNvHYdKA2CNhHFtc1oAEnxpTw1DO5EUaCA5WkKYe3hzJCEhPDIxPzNJgyJzc0IegnUnnBYWiZ0MLH+YmHOYagFAlhEWFjMTbnBamHNzc5hakhl+RGxhk3Mic3Nzc3NzmHNHCFRZWy1ac3NzcwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA="
+      rel="icon"
+      type="image/x-icon"
+    />
+    <title>Meme Generator</title>
+  </head>
+  <body>
+    <div class="meme-wrapper">
+      <div class="meme__text">
+        <label id="buttonSending">
+          <input id="sending" type="file" style="display: none" />Загрузить
+          изображение
+        </label>
+        <div class="meme__text-content">
+          <div class="meme__text-top">
+            <div class="meme__controls-wrapper">
+              <p>Верхний текст</p>
+              <div class="meme__controls">
+                <div class="meme__controls-option">
+                  <label for="text-color">Цвет:</label>
+                  <input type="color" id="color-text" value="#ffffff" />
+                </div>
+                <div class="meme__controls-option">
+                  <label class="font-size" for="font-size">Размер:</label>
+                  <select id="font-size">
+                    <option value="10px">10px</option>
+                    <option value="20px">20px</option>
+                    <option value="30px">30px</option>
+                    <option value="40px">40px</option>
+                    <option value="50px">50px</option>
+                    <option value="60px" selected>60px</option>
+                    <option value="70px">70px</option>
+                    <option value="80px">80px</option>
+                    <option value="90px">90px</option>
+                    <option value="100px">100px</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <input
+              class="input"
+              id="text-top"
+              type="text"
+              placeholder="Нельзя просто так взять"
+            />
+          </div>
+          <div class="meme__text-bottom">
+            <p>Нижний текст</p>
+            <input
+              class="input"
+              id="text-bottom"
+              type="text"
+              placeholder="и стать интернет-мемом"
+            />
+          </div>
+        </div>
+        <div class="meme__buttons">
+          <a id="generation" href="#">Сгенерировать</a>
+          <a id="downloading" href="#">Скачать</a>
+        </div>
+      </div>
+      <div id="image" class="meme__image"></div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
