@@ -133,6 +133,11 @@ body {
   color: #fff;
 }
 
+.meme__image-wrapper p {
+  border: 1px dashed #000;
+  background: #fdcd2c;
+}
+
 .meme__image {
   opacity: 0.9;
   display: flex;
@@ -145,10 +150,14 @@ body {
   border-radius: 5px;
   overflow: hidden;
   position: relative;
-  background-size: cover;
   background-position: center;
+  background-size: 100% 100%;
 }
-.meme__generated-text {
-  position: absolute;
-  cursor: grab;
+
+.top__text {
+  top: 20px;
+}
+
+.bottom__text {
+  bottom: 20px;
 }
