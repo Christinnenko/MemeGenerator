@@ -6,4 +6,11 @@
 
 ![image](https://github.com/Christinnenko/MemeGenerator/assets/135636897/5dde3244-7c8f-483d-b1b7-637f2a9c1898)
 
+## Технологии:
+
+HTML, Canvas, CSS, JavaScript (без использования сторонних библиотек и фреймворков согласно ТЗ)
+
+
+
+
 
